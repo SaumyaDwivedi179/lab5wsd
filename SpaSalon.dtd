@@ -1,14 +1,23 @@
 <!ELEMENT SpaSalon (Company, Services, Appointments)>
-<!ELEMENT Company (CompanyName, CompanyCode)>
+<!ELEMENT Company (CompanyName, CompanyCode, CompanyAddress, CompanyPhone)>
 <!ELEMENT CompanyName (#PCDATA)>
 <!ELEMENT CompanyCode (#PCDATA)>
+<!ELEMENT CompanyAddress (#PCDATA)>
+<!ELEMENT CompanyPhone (#PCDATA)>
+
 <!ELEMENT Services (Service+)>
-<!ELEMENT Service (ServiceCode, ServiceName, ServiceAvailability)>
+<!ELEMENT Service (ServiceCode, ServiceName, ServiceDescription?, ServicePrice, ServiceAvailability, ServiceDuration, ServiceDate, ServiceLocation)>
 <!ELEMENT ServiceCode (#PCDATA)>
 <!ELEMENT ServiceName (#PCDATA)>
+<!ELEMENT ServiceDescription (#PCDATA)>
+<!ELEMENT ServicePrice (#PCDATA)>
 <!ELEMENT ServiceAvailability (#PCDATA)>
+<!ELEMENT ServiceDuration (#PCDATA)>
+<!ELEMENT ServiceDate (#PCDATA)>
+<!ELEMENT ServiceLocation (#PCDATA)>
+
 <!ELEMENT Appointments (Appointment+)>
-<!ELEMENT Appointment (AppointmentID, CustomerName, CustomerPhone, AppointmentDate, BasePrice, TotalPrice)>
+<!ELEMENT Appointment (AppointmentID, CustomerName, CustomerPhone, AppointmentDate, ServiceCode, ServiceName, BasePrice, TotalPrice)>
 <!ELEMENT AppointmentID (#PCDATA)>
 <!ELEMENT CustomerName (#PCDATA)>
 <!ELEMENT CustomerPhone (#PCDATA)>
