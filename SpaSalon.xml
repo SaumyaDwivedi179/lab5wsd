@@ -4,40 +4,171 @@
 <?xml-model href="SpaSalon.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <SpaSalon>
     <Company>
-        <CompanyName>Relax and Rejuvenate Spa</CompanyName>
-        <CompanyCode>RRS2024</CompanyCode>
+        <CompanyName>Treat Yourself</CompanyName>
+        <CompanyCode>AN26MD24</CompanyCode>
+        <CompanyAddress>Sigra Varanasi</CompanyAddress>
+        <CompanyPhone>01233567890</CompanyPhone>
     </Company>
     <Services>
         <Service>
-            <ServiceCode>SRV201</ServiceCode>
-            <ServiceName>Full Body Massage</ServiceName>
-            <ServiceAvailability>Yes</ServiceAvailability>
+            <ServiceCode>S001</ServiceCode>
+            <ServiceName>Aromatherapy Massage</ServiceName>
+            <ServiceDescription>Relax with a soothing aromatherapy massage using essential oils.</ServiceDescription>
+            <ServicePrice>100.00</ServicePrice>
+            <ServiceAvailability>Available</ServiceAvailability>
+            <ServiceDuration>60 minutes</ServiceDuration>
+            <ServiceDate>2024-08-20</ServiceDate>
+            <ServiceLocation>Massage Room 1</ServiceLocation>
         </Service>
         <Service>
-            <ServiceCode>SRV202</ServiceCode>
-            <ServiceName>Facial Treatment</ServiceName>
-            <ServiceAvailability>Yes</ServiceAvailability>
+            <ServiceCode>S002</ServiceCode>
+            <ServiceName>Deep Cleansing Facial</ServiceName>
+            <ServiceDescription>Revitalize your skin with a deep cleansing facial treatment.</ServiceDescription>
+            <ServicePrice>90.00</ServicePrice>
+            <ServiceAvailability>Limited Availability</ServiceAvailability>
+            <ServiceDuration>75 minutes</ServiceDuration>
+            <ServiceDate>2024-08-22</ServiceDate>
+            <ServiceLocation>Facial Room 2</ServiceLocation>
         </Service>
         <Service>
-            <ServiceCode>SRV203</ServiceCode>
-            <ServiceName>Manicure and Pedicure</ServiceName>
-            <ServiceAvailability>No</ServiceAvailability>
+            <ServiceCode>S003</ServiceCode>
+            <ServiceName>Luxury Pedicure</ServiceName>
+            <ServiceDescription>Indulge in a luxurious pedicure with premium products.</ServiceDescription>
+            <ServicePrice>60.00</ServicePrice>
+            <ServiceAvailability>Available</ServiceAvailability>
+            <ServiceDuration>50 minutes</ServiceDuration>
+            <ServiceDate>2024-08-23</ServiceDate>
+            <ServiceLocation>Nail Studio 3</ServiceLocation>
+        </Service>
+        <Service>
+            <ServiceCode>S004</ServiceCode>
+            <ServiceName>Hot Stone Therapy</ServiceName>
+            <ServiceDescription>Experience the therapeutic effects of heated stones in a full-body massage.</ServiceDescription>
+            <ServicePrice>120.00</ServicePrice>
+            <ServiceAvailability>Available</ServiceAvailability>
+            <ServiceDuration>90 minutes</ServiceDuration>
+            <ServiceDate>2024-08-25</ServiceDate>
+            <ServiceLocation>Massage Room 2</ServiceLocation>
+        </Service>
+        <Service>
+            <ServiceCode>S005</ServiceCode>
+            <ServiceName>Reflexology</ServiceName>
+            <ServiceDescription>Relieve stress and improve circulation with targeted foot reflexology.</ServiceDescription>
+            <ServicePrice>75.00</ServicePrice>
+            <ServiceAvailability>Limited Availability</ServiceAvailability>
+            <ServiceDuration>45 minutes</ServiceDuration>
+            <ServiceDate>2024-08-26</ServiceDate>
+            <ServiceLocation>Reflexology Room 1</ServiceLocation>
+        </Service>
+        <Service>
+            <ServiceCode>S006</ServiceCode>
+            <ServiceName>Body Scrub</ServiceName>
+            <ServiceDescription>Exfoliate and rejuvenate your skin with a luxurious body scrub treatment.</ServiceDescription>
+            <ServicePrice>85.00</ServicePrice>
+            <ServiceAvailability>Available</ServiceAvailability>
+            <ServiceDuration>60 minutes</ServiceDuration>
+            <ServiceDate>2024-08-27</ServiceDate>
+            <ServiceLocation>Body Treatment Room 1</ServiceLocation>
+        </Service>
+        <Service>
+            <ServiceCode>S007</ServiceCode>
+            <ServiceName>Haircut and Styling</ServiceName>
+            <ServiceDescription>Enjoy a fresh haircut and professional styling from our expert stylists.</ServiceDescription>
+            <ServicePrice>50.00</ServicePrice>
+            <ServiceAvailability>Available</ServiceAvailability>
+            <ServiceDuration>45 minutes</ServiceDuration>
+            <ServiceDate>2024-08-28</ServiceDate>
+            <ServiceLocation>Salon Area 1</ServiceLocation>
+        </Service>
+        <Service>
+            <ServiceCode>S008</ServiceCode>
+            <ServiceName>Manicure</ServiceName>
+            <ServiceDescription>Get beautifully manicured nails with our deluxe manicure service.</ServiceDescription>
+            <ServicePrice>40.00</ServicePrice>
+            <ServiceAvailability>Available</ServiceAvailability>
+            <ServiceDuration>30 minutes</ServiceDuration>
+            <ServiceDate>2024-08-29</ServiceDate>
+            <ServiceLocation>Nail Studio 2</ServiceLocation>
         </Service>
     </Services>
     <Appointments>
         <Appointment>
             <AppointmentID>AP001</AppointmentID>
             <CustomerName>Jane Doe</CustomerName>
-            <CustomerPhone>+91 9876543210</CustomerPhone>
+            <CustomerPhone>0123456789</CustomerPhone>
             <AppointmentDate>2024-08-15</AppointmentDate>
+            <ServiceCode>SRV201</ServiceCode>
+            <ServiceName>Full Body Massage</ServiceName>
             <BasePrice>1500.00</BasePrice>
             <TotalPrice>1500.00</TotalPrice>
         </Appointment>
         <Appointment>
             <AppointmentID>AP002</AppointmentID>
             <CustomerName>John Smith</CustomerName>
-            <CustomerPhone>+91 9876543211</CustomerPhone>
+            <CustomerPhone>0123456789</CustomerPhone>
             <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Facial Treatment</ServiceName>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP003</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>0123456789</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Nails</ServiceName>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP004</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>0123456789</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Spa</ServiceName>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP005</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>0123456789</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Haircut</ServiceName>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP006</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>0123456789</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Facial Treatment</ServiceName>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP007</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>0123456789</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Manicure</ServiceName>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP008</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>0123456789</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Waxing</ServiceName>
             <BasePrice>1200.00</BasePrice>
             <TotalPrice>1200.00</TotalPrice>
         </Appointment>
