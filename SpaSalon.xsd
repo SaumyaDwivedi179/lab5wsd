@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define the root element -->
+  <xs:element name="SpaSalon">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Company element -->
+        <xs:element name="Company">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyName" type="xs:string"/>
+              <xs:element name="CompanyCode" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Services element -->
+        <xs:element name="Services">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Service" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ServiceCode" type="xs:string"/>
+                    <xs:element name="ServiceName" type="xs:string"/>
+                    <xs:element name="ServiceAvailability" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Appointments element -->
+        <xs:element name="Appointments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Appointment" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AppointmentID" type="xs:string"/>
+                    <xs:element name="CustomerName" type="xs:string"/>
+                    <xs:element name="CustomerPhone" type="xs:string"/>
+                    <xs:element name="AppointmentDate" type="xs:date"/>
+                    <xs:element name="BasePrice" type="xs:decimal"/>
+                    <xs:element name="TotalPrice" type="xs:decimal"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

@@ -1,0 +1,17 @@
+<!ELEMENT SpaSalon (Company, Services, Appointments)>
+<!ELEMENT Company (CompanyName, CompanyCode)>
+<!ELEMENT CompanyName (#PCDATA)>
+<!ELEMENT CompanyCode (#PCDATA)>
+<!ELEMENT Services (Service+)>
+<!ELEMENT Service (ServiceCode, ServiceName, ServiceAvailability)>
+<!ELEMENT ServiceCode (#PCDATA)>
+<!ELEMENT ServiceName (#PCDATA)>
+<!ELEMENT ServiceAvailability (#PCDATA)>
+<!ELEMENT Appointments (Appointment+)>
+<!ELEMENT Appointment (AppointmentID, CustomerName, CustomerPhone, AppointmentDate, BasePrice, TotalPrice)>
+<!ELEMENT AppointmentID (#PCDATA)>
+<!ELEMENT CustomerName (#PCDATA)>
+<!ELEMENT CustomerPhone (#PCDATA)>
+<!ELEMENT AppointmentDate (#PCDATA)>
+<!ELEMENT BasePrice (#PCDATA)>
+<!ELEMENT TotalPrice (#PCDATA)>

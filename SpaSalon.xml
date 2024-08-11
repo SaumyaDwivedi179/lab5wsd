@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="SpaSalon.xsl"?>
+<!DOCTYPE SpaSalon SYSTEM "SpaSalon.dtd">
+<?xml-model href="SpaSalon.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<SpaSalon>
+    <Company>
+        <CompanyName>Relax and Rejuvenate Spa</CompanyName>
+        <CompanyCode>RRS2024</CompanyCode>
+    </Company>
+    <Services>
+        <Service>
+            <ServiceCode>SRV201</ServiceCode>
+            <ServiceName>Full Body Massage</ServiceName>
+            <ServiceAvailability>Yes</ServiceAvailability>
+        </Service>
+        <Service>
+            <ServiceCode>SRV202</ServiceCode>
+            <ServiceName>Facial Treatment</ServiceName>
+            <ServiceAvailability>Yes</ServiceAvailability>
+        </Service>
+        <Service>
+            <ServiceCode>SRV203</ServiceCode>
+            <ServiceName>Manicure and Pedicure</ServiceName>
+            <ServiceAvailability>No</ServiceAvailability>
+        </Service>
+    </Services>
+    <Appointments>
+        <Appointment>
+            <AppointmentID>AP001</AppointmentID>
+            <CustomerName>Jane Doe</CustomerName>
+            <CustomerPhone>+91 9876543210</CustomerPhone>
+            <AppointmentDate>2024-08-15</AppointmentDate>
+            <BasePrice>1500.00</BasePrice>
+            <TotalPrice>1500.00</TotalPrice>
+        </Appointment>
+        <Appointment>
+            <AppointmentID>AP002</AppointmentID>
+            <CustomerName>John Smith</CustomerName>
+            <CustomerPhone>+91 9876543211</CustomerPhone>
+            <AppointmentDate>2024-08-16</AppointmentDate>
+            <BasePrice>1200.00</BasePrice>
+            <TotalPrice>1200.00</TotalPrice>
+        </Appointment>
+    </Appointments>
+</SpaSalon>
